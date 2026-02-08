@@ -5,7 +5,7 @@ class SiteHeader extends HTMLElement {
         const active = this.getAttribute('active') || '';
 
         // Detect if we're in a subdirectory based on path depth
-        const pathDepth = window.location.pathname.split('/').filter(p => p && p !== 'docs' && p !== 'cheetahs').length;
+        const pathDepth = window.location.pathname.split('/').filter(p => p && p !== 'docs').length;
         const base = pathDepth > 1 ? '../' : '';
 
         this.innerHTML = `
@@ -53,8 +53,8 @@ class SiteFooter extends HTMLElement {
                         <h4>Quick Links</h4>
                         <ul>
                             <li><a href="${base}about.html">About Us</a></li>
-                            <li><a href="${base}/xc/index.html">Cross Country</a></li>
-                            <li><a href="${base}/track/index.html">Outdoor Track</a></li>
+                            <li><a href="${base}xc/index.html">Cross Country</a></li>
+                            <li><a href="${base}track/index.html">Outdoor Track</a></li>
                             <li><a href="${base}gallery.html">Gallery</a></li>
                         </ul>
                     </div>
