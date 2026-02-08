@@ -5,7 +5,7 @@ class SiteHeader extends HTMLElement {
         const active = this.getAttribute('active') || '';
 
         // Detect if we're in a subdirectory based on path depth
-        const pathDepth = window.location.pathname.split('/').filter(p => p && p !== 'docs').length;
+        const pathDepth = window.location.pathname.split('/').filter(p => p && p !== 'docs' && p !== 'cheetahs').length;
         const base = pathDepth > 1 ? '../' : '';
 
         this.innerHTML = `
@@ -20,8 +20,8 @@ class SiteHeader extends HTMLElement {
                 <ul class="nav-links">
                     <li><a href="${base}index.html"${active === 'home' ? ' class="active"' : ''}>Home</a></li>
                     <li><a href="${base}about.html"${active === 'about' ? ' class="active"' : ''}>About</a></li>
-                    <li><a href="${base}/xc/index.html"${active === 'xc' ? ' class="active"' : ''}>Cross Country</a></li>
-                    <li><a href="${base}/track/index.html"${active === 'track' ? ' class="active"' : ''}>Outdoor Track</a></li>
+                    <li><a href="${base}xc/index.html"${active === 'xc' ? ' class="active"' : ''}>Cross Country</a></li>
+                    <li><a href="${base}track/index.html"${active === 'track' ? ' class="active"' : ''}>Outdoor Track</a></li>
                     <li><a href="${base}gallery.html"${active === 'gallery' ? ' class="active"' : ''}>Gallery</a></li>
                 </ul>
             </nav>
