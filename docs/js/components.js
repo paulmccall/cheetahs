@@ -20,8 +20,8 @@ class SiteHeader extends HTMLElement {
                 <ul class="nav-links">
                     <li><a href="${base}index.html"${active === 'home' ? ' class="active"' : ''}>Home</a></li>
                     <li><a href="${base}about.html"${active === 'about' ? ' class="active"' : ''}>About</a></li>
-                    <li><a href="${base}xc/index.html"${active === 'xc' ? ' class="active"' : ''}>Cross Country</a></li>
-                    <li><a href="${base}track/index.html"${active === 'track' ? ' class="active"' : ''}>Outdoor Track</a></li>
+                    <li><a href="${base}/xc/index.html"${active === 'xc' ? ' class="active"' : ''}>Cross Country</a></li>
+                    <li><a href="${base}/track/index.html"${active === 'track' ? ' class="active"' : ''}>Outdoor Track</a></li>
                     <li><a href="${base}gallery.html"${active === 'gallery' ? ' class="active"' : ''}>Gallery</a></li>
                 </ul>
             </nav>
@@ -53,8 +53,8 @@ class SiteFooter extends HTMLElement {
                         <h4>Quick Links</h4>
                         <ul>
                             <li><a href="${base}about.html">About Us</a></li>
-                            <li><a href="${base}xc/index.html">Cross Country</a></li>
-                            <li><a href="${base}track/index.html">Outdoor Track</a></li>
+                            <li><a href="${base}/xc/index.html">Cross Country</a></li>
+                            <li><a href="${base}/track/index.html">Outdoor Track</a></li>
                             <li><a href="${base}gallery.html">Gallery</a></li>
                         </ul>
                     </div>
