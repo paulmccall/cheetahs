@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Chapel Hill Cheetahs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/components.js" defer></script>
+</head>
+<body>
+    <site-header active="join"></site-header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Join the Team</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="join-content">
+                    <div class="join-info">
+                        <h2>Become a Cheetah</h2>
+                        <p>
+                            We welcome athletes of all skill levels! Whether your child is just starting
+                            to explore running or is ready to compete, the Cheetahs have a place for them.
+                        </p>
+
+                        <h3 class="mt-4">Requirements</h3>
+                        <ul class="requirements-list">
+                            <li>Ages 6-14 years old</li>
+                            <li>Running shoes (we can recommend options)</li>
+                            <li>Comfortable athletic clothing</li>
+                            <li>Water bottle for practice</li>
+                            <li>Completed registration form</li>
+                            <li>Signed waiver (parent/guardian)</li>
+                        </ul>
+
+                        <h3 class="mt-4">Season Fees</h3>
+                        <div class="card mt-2" style="background: var(--light-gray);">
+                            <p><strong>Spring 2026 Season:</strong> $85 per athlete</p>
+                            <p style="margin-bottom: 0; color: var(--text-gray);">
+                                Includes: Team t-shirt, entry to Cheetah Fun Run, end-of-season medal,
+                                and all practice sessions. Scholarships available upon request.
+                            </p>
+                        </div>
+
+                        <h3 class="mt-4">What's Included</h3>
+                        <ul class="requirements-list">
+                            <li>Two practices per week (Tues & Thurs)</li>
+                            <li>Optional Saturday trail runs</li>
+                            <li>Team t-shirt</li>
+                            <li>Entry to the Cheetah Fun Run</li>
+                            <li>End-of-season celebration and medal</li>
+                            <li>USATF registration assistance</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Contact Us</h2>
+                        <p>Have questions or ready to register? Get in touch!</p>
+
+                        <form action="mailto:info@chapelhillcheetahs.org" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="parent-name">Parent/Guardian Name</label>
+                                <input type="text" id="parent-name" name="parent-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="athlete-name">Athlete Name</label>
+                                <input type="text" id="athlete-name" name="athlete-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="athlete-age">Athlete Age</label>
+                                <select id="athlete-age" name="athlete-age" required>
+                                    <option value="">Select age...</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message / Questions</label>
+                                <textarea id="message" name="message" placeholder="Tell us about your athlete or ask any questions..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+
+                        <div class="mt-4 text-center">
+                            <p><strong>Or email us directly:</strong></p>
+                            <a href="mailto:info@chapelhillcheetahs.org" style="color: var(--primary-orange); font-weight: 600;">
+                                info@chapelhillcheetahs.org
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <div class="container">
+                <h2 class="text-center">Frequently Asked Questions</h2>
+                <div class="highlights-grid mt-4">
+                    <div class="card">
+                        <h3>Do I need running experience?</h3>
+                        <p>No! We welcome athletes of all levels. Our Cubs program is designed specifically for beginners.</p>
+                    </div>
+                    <div class="card">
+                        <h3>What if my child misses practice?</h3>
+                        <p>Life happens! While consistent attendance helps progress, occasional absences are fine. Just let the coach know.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Are meets required?</h3>
+                        <p>Meets are optional but encouraged. They're a great way for athletes to experience friendly competition and see their progress.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Can parents volunteer?</h3>
+                        <p>Absolutely! We rely on parent volunteers for meets, snacks, and other activities. Let us know how you'd like to help!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+</body>
+</html>
